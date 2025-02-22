@@ -27,8 +27,8 @@ mongoose
 app.use("/api/auth", authRoute);
 app.use("/api/note", protect, notesRoute);
 
-app.get("/test", (req, res) => {
-  res.send("Welcome to server of Note-keeper App !!");
+app.get("/", (req, res) => {
+  res.send("Welcome to server of Note-keeper App !!!!");
 });
 
 app.listen(process.env.PORT || 4000, () => {
